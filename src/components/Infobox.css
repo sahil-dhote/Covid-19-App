@@ -1,0 +1,55 @@
+.infoBoxcontent{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+
+}
+
+.infoBoxone{
+    /*border: 2px solid black;*/
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.infoBoxtwo{
+    /*border: 2px solid black;*/
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.infoBoxthree{
+    /*border: 2px solid black;*/
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.infodata{
+    font-family: Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+#infotitle{
+    font-family: oswald;
+}
+
+#active{
+    color:red;
+}
+
+#recover{
+    color: greenyellow;
+
+}
+
+#death{
+    color:aqua;
+
+}

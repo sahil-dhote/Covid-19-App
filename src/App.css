@@ -1,0 +1,76 @@
+.btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.allbtn{
+    margin-left: 40px;
+    margin-right: 40px;
+   /* --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+  */
+}
+
+#sorttitle{
+    margin-left: 85px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#logoname{
+    margin-left: 5px;
+}
+
+#logo{
+    margin-left: 5px;
+}
+
+@media (max-width: 990px) {
+    .selectBox{
+        display:block;
+        margin:20px auto;
+        width: 80vw;
+        box-sizing: border-box;
+        height:40px;
+        border-radius: 10px;
+
+    }
+
+    .tableData {
+        min-width:420px;
+      width:100%;
+    }
+
+    .caseBoxWrapper{
+        flex-direction:column;
+        
+    }
+    .caseBoxWrapper div{
+        flex-basis: 200px;
+        width:70vw;
+        margin:10px;
+    }
+
+    .caseBoxWrapper h2{
+        font-size: 30px;;
+    }
+
+  }
+
+  @media (max-width: 600px){
+      .serialColumn{
+          display:none;
+      }
+      .tableData button{
+          width:fit-content
+      }
+      .tableData .countryWiseHeading{
+     font-size:30px;
+    }
+  }

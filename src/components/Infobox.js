@@ -1,14 +1,21 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react';
+import './Infobox.css';
 
 function Infobox()
 {
     const [countryData, setCountryData] = useState({
         cases: {
-            active: "Loading",
-            recovered: "Loading",
+            active:<div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>,
+            recovered: <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>,
         },
         deaths: {
-            total: "Loading",
+            total: <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>,
         },
     });
 
@@ -74,35 +81,36 @@ function Infobox()
     
         };
         getAllCountries();
-    },[]);
-
-
-
+    }, []);
+    
 
 
     
-
     return (
-        <div className="">
-        <div className="">
-            <h1> Active Cases</h1>
-            Size={countryData.cases.active}
-            
-            
+        <div className="infoBoxcontent">
+         <div class="shadow p-3 mb-5 bg-body rounded">   
+        <div className="infoBoxone">
+            <h2 id="infotitle"> Active Cases</h2>
+            <h2 className="infodata" id="active">{countryData.cases.active}</h2>
+            </div>
         </div>
-        <div className="">
-            <h1>Recovered</h1>
-            Size={countryData.cases.recovered}
-           
+
+        <div class="shadow p-3 mb-5 bg-body rounded">
+        <div className="infoBoxtwo">
+            <h2 id="infotitle">Recovered Cases</h2>
+            <h2 className="infodata" id="recover">{countryData.cases.recovered}</h2>
+            </div>
         </div>
-            <div className="">
-            <h1>Deaths</h1>
-            Size={countryData.deaths.total}
-            
+        <div class="shadow p-3 mb-5 bg-body rounded">
+            <div className="infoBoxthree">
+            <h2 id="infotitle">Death Cases</h2>
+            <h2 className="infodata" id="death">{countryData.deaths.total}</h2>
+                    
+        </div> 
             
         </div>
 
-            </div>
+        </div>
             
     )
 }

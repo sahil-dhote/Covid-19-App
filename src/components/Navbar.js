@@ -3,10 +3,13 @@ import React from 'react'
 function Navbar() {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-light bg-info">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Covid-19 Tracker</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">
+    <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikiproject_COVID-19_-_logo.svg/1200px-Wikiproject_COVID-19_-_logo.svg.png" alt="..." height="40" />
+              <span id="logoname"> Covid-19 Tracker </span>
+            </a>
+    {/*<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,13 +34,13 @@ function Navbar() {
         <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>
         </li>
-      </ul>
+    </ul>*/}
                         {/*<form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-success" type="submit">Search</button>
     </form>*/}
     </div>
-  </div>
+  
 </nav>
         </div>
 

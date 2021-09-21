@@ -1,4 +1,5 @@
 import "./App.css";
+import'./components/InfoTable.css'
 import { useState, useEffect } from "react";
 import Infobox from "./components/Infobox";
 import Infotable from "./components/InfoTable";
@@ -55,20 +56,32 @@ function App() {
             <Navbar />
             
 
-            <div className="caseBoxWrapper">
+            <div className="InfoboxWrapper">
                 <Infobox/>
             </div>
+
+
+            <div className="allbtn">
+            <h3 id="sorttitle"> Sort By:- </h3>
+            <div className="btn">
+                
+                <button type="button" class="btn btn-info" onClick={handleSort} value="country">Country Name</button>
+                <button type="button" class="btn btn-info" onClick={handleSort} value="new">New Cases</button>
+                <button type="button" class="btn btn-info" onClick={handleSort} value="recovered">Recovered Cases</button>
+                <button type="button" class="btn btn-info" onClick={handleSort} value="active">Active Cases</button>
+                <button type="button" class="btn btn-info" onClick={handleSort} value="deaths">Total Deaths</button>
+                </div>
+                </div>
 
             <div className="tableData">
                
                 <tr>
-                    <td><button onClick={handleSort} value="country">Country Name</button></td>
-                    <td><button onClick={handleSort} value="new">New Cases</button></td>
-                   
-
-                    <td><button onClick={handleSort} value="active">Active Cases</button></td>
-                    <td><button onClick={handleSort} value="recovered">Recovered Cases</button></td>
-                    <td><button onClick={handleSort} value="deaths">Total Deaths</button></td>
+                    <td >S.No</td>
+                    <td>Country</td>
+                    <td>New Cases</td>
+                    <td>Recovered Cases</td>
+                    <td>Active Cases</td>
+                    <td>Total Deaths</td>
                 </tr>
 
                 {countriesData.map((country, index) => {
