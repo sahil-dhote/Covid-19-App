@@ -53,3 +53,29 @@
     color:aqua;
 
 }
+
+
+@media (max-width: 700px) {
+    .infoBoxone
+    {
+        margin-left: 0px !important;
+       
+
+    }
+    .infoBoxtwo
+    {
+        margin-left: 0px !important;
+        margin-top: -40px !important;
+
+    }
+    .infoBoxthree
+    {
+        margin-left: 0px !important;
+        margin-top: -40px !important;
+    }
+
+    #infotitle{
+        display: flex;
+        justify-content: center;
+    }
+}

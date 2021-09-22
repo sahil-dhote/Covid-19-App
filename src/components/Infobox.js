@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Infobox.css';
 
+
 function Infobox()
 {
     const [countryData, setCountryData] = useState({
@@ -88,21 +89,24 @@ function Infobox()
     
     return (
         <div className="infoBoxcontent">
-         <div class="shadow p-3 mb-5 bg-body rounded">   
+            
         <div className="infoBoxone">
+        <div class="shadow p-3 mb-5 bg-body rounded">
             <h2 id="infotitle"> Active Cases</h2>
             <h2 className="infodata" id="active">{countryData.cases.active}</h2>
             </div>
         </div>
 
-        <div class="shadow p-3 mb-5 bg-body rounded">
+        
         <div className="infoBoxtwo">
+        <div class="shadow p-3 mb-5 bg-body rounded">
             <h2 id="infotitle">Recovered Cases</h2>
             <h2 className="infodata" id="recover">{countryData.cases.recovered}</h2>
             </div>
         </div>
-        <div class="shadow p-3 mb-5 bg-body rounded">
+        
             <div className="infoBoxthree">
+            <div class="shadow p-3 mb-5 bg-body rounded">
             <h2 id="infotitle">Death Cases</h2>
             <h2 className="infodata" id="death">{countryData.deaths.total}</h2>
                     

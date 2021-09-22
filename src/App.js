@@ -65,15 +65,16 @@ function App() {
             <h3 id="sorttitle"> Sort By:- </h3>
             <div className="btn">
                 
-                <button type="button" class="btn btn-info" onClick={handleSort} value="country">Country Name</button>
-                <button type="button" class="btn btn-info" onClick={handleSort} value="new">New Cases</button>
-                <button type="button" class="btn btn-info" onClick={handleSort} value="recovered">Recovered Cases</button>
-                <button type="button" class="btn btn-info" onClick={handleSort} value="active">Active Cases</button>
-                <button type="button" class="btn btn-info" onClick={handleSort} value="deaths">Total Deaths</button>
+                <button type="button" id="btnone" class="btn btn-info" onClick={handleSort} value="country">Country Name</button>
+                <button type="button" id="btnone" class="btn btn-info" onClick={handleSort} value="new">New Cases</button>
+                <button type="button" id="btnone" class="btn btn-info" onClick={handleSort} value="recovered">Recovered Cases</button>
+                <button type="button" id="btnfour" class="btn btn-info" onClick={handleSort} value="active">Active Cases</button>
+                <button type="button" id="btnfive" class="btn btn-info" onClick={handleSort} value="deaths">Total Deaths</button>
                 </div>
                 </div>
 
             <div className="tableData">
+                <table className="table">
                
                 <tr>
                     <td >S.No</td>
@@ -96,6 +97,7 @@ function App() {
                         />
                     );
                 })}
+                </table>
             </div>
             
         </div>

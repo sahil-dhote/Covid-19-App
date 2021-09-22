@@ -31,46 +31,70 @@
     margin-left: 5px;
 }
 
-@media (max-width: 990px) {
-    .selectBox{
-        display:block;
-        margin:20px auto;
-        width: 80vw;
-        box-sizing: border-box;
-        height:40px;
-        border-radius: 10px;
+.btn button:hover,.btn button:visited{
+    color:green;
+    border:1px solid green;
+    background-color:rgba(238, 238, 238, 0.5);
+}
 
-    }
-
-    .tableData {
-        min-width:420px;
-      width:100%;
-    }
-
-    .caseBoxWrapper{
+@media (max-width: 990px) 
+{
+    .infoBoxcontent{
+        display:flex;
         flex-direction:column;
-        
+        /*justify-content: center;*/   
     }
-    .caseBoxWrapper div{
+
+    .infoBoxcontent div{
         flex-basis: 200px;
         width:70vw;
         margin:10px;
     }
 
-    .caseBoxWrapper h2{
+    .infoBoxcontent h2{
         font-size: 30px;;
     }
 
-  }
 
-  @media (max-width: 600px){
-      .serialColumn{
-          display:none;
-      }
-      .tableData button{
-          width:fit-content
-      }
-      .tableData .countryWiseHeading{
-     font-size:30px;
+    #sorttitle{
+        margin-top: -40px !important;
+
+    }
+
+    .btn {
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #btnone{
+        margin-left: -18px;
+        margin-right: 40px;
+    }
+
+    #btntwo{
+
+        margin-left: 200px;
+    }
+
+    #btnfour{
+        position: absolute !important;
+        margin-left: -20px;
+        margin-top: 90px;
+    }
+
+    #btnfive{
+        position: absolute !important;
+        margin-left: 160px;
+        margin-top: 90px;
+    }
+
+    .tableData 
+    {
+        margin-top: 70px !important;
+        overflow-y: auto;
+        overflow-x: auto;
+        
+    
     }
   }
