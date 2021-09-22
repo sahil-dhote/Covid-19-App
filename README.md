@@ -1,8 +1,8 @@
-Covid-19 Tracker
+# Covid-19 Tracker
 
-PROBLEM STATEMENT
+## PROBLEM STATEMENT
 
-In the project directory, you can run:
+ In this application a user will be able to check statistics of covid cases across various countries. 
 
 ### `npm start`
 
