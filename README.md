@@ -1,6 +1,6 @@
-# Covid-19 Tracker
+Covid-19 Tracker
 
-## PROBLEM STATEMENT
+PROBLEM STATEMENT
 
 In the project directory, you can run:
 
