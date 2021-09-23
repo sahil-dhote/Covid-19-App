@@ -14,6 +14,6 @@
 
 ## HOW TO RUN ON LOCAL SYSTEM
 
-1)Clone the repository.
-2)Open index.html page with live server
+### 1)Clone the repository.
+### 2)Open index.html page with live server
 
